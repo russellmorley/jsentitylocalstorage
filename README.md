@@ -1,3 +1,5 @@
+# A Javascript library for storing models to HTML 5 local storage with parent-child view control #
+
 This repository contains a javascript library for writing complete HTML5-based data entry applications. 
 
 The library supports:  
