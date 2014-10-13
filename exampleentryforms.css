@@ -1,0 +1,210 @@
+/*
+.mainbuttons {
+	-moz-box-shadow:inset 0px 0px 0px 5px #fcf8f2;
+	-webkit-box-shadow:inset 0px 0px 0px 5px #fcf8f2;
+	box-shadow:inset 0px 0px 0px 5px #fcf8f2;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fae4bd), color-stop(1, #eac380) );
+	background:-moz-linear-gradient( center top, #fae4bd 5%, #eac380 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fae4bd', endColorstr='#eac380');
+	background-color:#fae4bd;
+	-moz-border-radius:19px;
+	-webkit-border-radius:19px;
+	border-radius:19px;
+	border:1px solid #eeb44f;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:21px;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #cc9f52;
+}
+*/
+
+.ui-header {
+	font-weight: light;
+
+}
+/*
+.ui-btn {
+	border: none !important;
+	font-family: "Helvetica";
+	font-weight: lighter;
+	background: rgba(0, 0, 0, 0.0);
+	color: blue !important; 
+}
+
+
+.ui-btn-down-e {
+	color: lightblue !important;	
+	
+}
+
+
+.ui-btn-up-e {
+	color: blue !important;	
+	
+}
+*/
+
+.ui-navbar .ui-btn {
+	background: #e6e6e6;
+	color: ##952327 !important;
+}
+
+.ui-navbar .ui-btn-active,
+.ui-navbar .ui-btn-active:visited,
+.ui-navbar .ui-btn-active:hover,
+.ui-navbar .ui-btn-active a.ui-link-inherit {
+	background: white;
+	color: #952327 !important;
+	font-weight: bold !important;
+}
+
+.ui-navbar .ui-btn-text {
+}
+
+.ui-btn {
+	border: 0px;
+	font-weight: lighter;
+	background: rgba(0,0,0,0.0);
+}
+
+.ui-btn-text {
+	font-size: large !important;
+}
+
+.ui-btn-active,
+.ui-btn-active:visited,
+.ui-btn-active:hover,
+.ui-btn-active a.ui-link-inherit {
+	background: rgba(0,0,0,0.0);
+	color: #f4afae !important;
+	font-weight: lighter;
+	border: 0px;
+}
+
+
+
+
+
+#main .ui-btn {
+	background: rgba(244,244,244,0.7);
+	width: 150px;
+	text-align: right;
+}
+
+#main .mainbutton {
+	font-weight: bold;
+	background: rgba(244,244,244,0.7);
+}
+
+#main .infobutton {
+	position: absolute;
+	bottom: 5px;
+}
+
+.displayTextForList {
+	background: rgba(255,0,0,.05) !important;
+}
+
+
+
+
+.ui-li {
+	border-bottom: 1px solid #f2f2f2;
+	font-size: inherit;
+	/* text-decoration:underline; */
+}
+
+.ui-input-text {
+	margin: 3px 3px 3px 3px !important;
+	}
+
+
+.ui-select .ui-icon-arrow-d {
+  display: none;
+}
+
+.ui-select .ui-btn-text {
+	text-align: left;	
+}
+
+.ui-title {
+	font-weight: lighter !important;
+	font-size: large !important;
+}
+
+.ui-li-link-alt-left {
+left: 0;
+right: auto;
+}
+.ul-li-has-alt-left {
+padding-right: auto !important;
+padding-left: 55px !important;
+}
+
+.ui-slider-handle {
+	background: #952327;	
+}
+/*
+.ui-shadow {
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+.ui-shadow-inset {
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+*/
+
+.ui-slider-input {
+	font-weight: lighter !important;
+}
+
+#main {
+	background:url(img/ShipmentMainBackground.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+
+.maintitle {
+	text-align:center;
+	color: #00000;
+	font-size: xx-large;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+}
+
+.mainfooter {
+	font-size:12px;
+	color: black;
+	margin: 0;
+    padding: 0;
+ 	text-decoration:underline;
+ 	left: 7px;
+ 	position: relative;
+}
+
+
+#main .ui-footer {
+    background: none;
+    border: none;
+    bottom: 0;
+}
+a:link {color: #952327 !important; text-decoration: none !important; font-weight: lighter !important;}
+a:visited {color: #952327 !important; text-decoration: none !important; font-weight: lighter !important;}
+a:hover {color: #952327 !important; text-decoration: none !important; font-weight: lighter !important;}
+a:focus {color: #952327 !important; text-decoration: none !important; font-weight: lighter !important;}
+a:active {color: #f4afae  !important; text-decoration: none !important; font-weight: lighter !important;}
+
+
+/*
+.mainfooter a:link {
+	color:#000000;
+} 
+*/
+

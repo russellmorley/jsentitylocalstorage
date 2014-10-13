@@ -1,0 +1,214 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<title>Shipment Mobile</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<meta charset="utf-8"> 
+
+	  	<link rel="stylesheet" href="jqmCMF.min.css" />
+  		<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" /> -->
+	  	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile.structure-1.3.2.min.css" /> 
+	  	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> 
+	  	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script> 
+  
+
+		<link rel="stylesheet" href="exampleentryforms.css">
+		<script src="entitiespersist.js"></script>
+		<script src="exampleentryforms.js"></script>
+</head> 
+<body> 
+<div id="main" data-role="page" data-theme="f">
+	<div data-role="content">	
+				<a href="#Shipments" class=" mainbutton" data-theme="f" data-role="button" data-transition="slide" >Shipments</a>
+				<a href="#" data-theme="f" data-role="button" data-rel="dialog" data-transition="flip" >Send</a>
+				<a href="#settings" data-theme="f" data-role="button" data-transition="slideup" >Settings</a>
+				<div class='mainfooter'>
+					<div  onclick="window.open('http://www.compass-point.net');">(c) Compass Point, Inc.
+					</div>
+					<div  onclick="window.open('http://www.compass-point.net/privacy_policy');">Privacy Policy
+					</div>
+				</div>
+    			<a href="CMFIntro.html" data-role="button" data-ajax="false" data-transition="slide" data-prefetch="true" data-theme="f">Intro</a>
+	</div><!-- /content -->
+    <div data-role="footer" data-position="fixed" data-fullscreen="true" data-id="ftr" data-theme="f">
+		<span class="ui-title"></span>
+  	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div id="Shipments" data-theme="f" data-role="page" data-title="Shipment Mobile">
+	<div data-role="header" data-theme="f" data-position="fixed">
+     <!--<img border="0" src="http://queenbeecoupons.com/wp-content/uploads/2009/10/TillamookCheese.jpg" alt="Logo, Tillamook" style="float:left;display:inline"/> -->
+		<a href="#main" data-theme="f" data-transition="slide" data-direction="reverse"><b>&lt;</b></a>
+		<!--<a href="#settings" data-rel="dialog" data-transition="flip" class="ui-btn-left" data-icon="gear" data-theme="d" data-iconpos="notext"></a> -->
+     <h1 >Shipments</h1>
+		<a href="#Shipment" data-theme="f" data-transition="slide" id="addshipment">Add</a>
+	</div><!-- /header -->
+	<div data-role="content">	
+		<ul data-role="listview" data-split-icon="delete" data-role="listview" class="list">
+			<li class="listitemtemplate" style="display:none;">
+				<a href="#Shipment" data-transition="slide" class="selectitem" >
+				42234433
+				</a>
+				<input type="hidden" class="itemid" />
+				<a href="#" data-theme="f" class="deleteitem">
+				</a>
+			</li>
+		</ul>
+	</div><!-- /content -->
+</div><!-- /page -->
+<div id="Shipment" data-theme="f" data-role="page"  data-title="Shipment Mobile">
+	<div data-role="header" data-theme="f" data-position="fixed">
+		<a href="#Shipments" data-theme="f" data-transition="slide" data-direction="reverse" ><b>&lt;</b></a>
+		<h1>Shipment</h1>
+		<a href="#Shipments" class="ui-btn-right" data-theme="f" id="saveshipment" data-transition="slide" data-direction="reverse">Save</a>
+	</div><!-- /header -->
+	<div data-role="content">	
+			<div class="ui-grid-a" style="border-bottom-width: 1px;">
+				<div class="ui-block-a">
+  				 	 <label for="ShipmentId">Shipment #: </label>
+					 <input type="text" name="ShipmentId" id="ShipmentId" value="" placeholder="Enter #" data-mini="true" class="displayTextForList"/>
+				</div>
+			</div><hr>
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+				<label for="ShipFromId" class="select">Ship From:</label>
+				<select name="ShipFromId" id="ShipFromId" data-mini="true">
+					<option value="1">Salem Distribution</option>
+					<option value="2">Sacremento Hub</option>
+				</select>
+				</div>
+				<div class="ui-block-b">
+				<label for="RouteId" class="select">Route:</label>
+				<select name="RouteId" id="RouteId" data-mini="true">
+					<option value="1">Willamette Corridor</option>
+					<option value="2">Central north-south</option>
+					<option value="3">Eastern</option>
+				</select>
+				</div>
+			</div><hr>
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					 <label for="DepartureDate">Departure date:</label>
+					 <input type="date" name="DepartureDate" id="DepartureDate" value="" placeholder="Enter date:" data-mini="true" />
+				</div>
+				<div class="ui-block-b">
+					 <label for="DepartureTime">Departure time:</label>
+					 <input type="time" name="DepartureTime" id="DepartureTime" value="" placeholder="Enter date" data-mini="true" />
+				</div>
+			</div>
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					 <label for="VehicleId">Vehicle #: </label>
+					 <input type="text" name="VehicleId" id="VehicleId" value="" placeholder="Enter #" data-mini="true" />
+				</div>
+			</div>
+	</div>
+	<div data-role="footer" data-id="foo1" data-theme="f" data-position="fixed">
+		<div data-role="navbar" data-theme="f" >
+			<ul>
+				<li><a href="#Shipment" data-theme="f" data-transition="none" class="ui-btn-active ui-state-persist">Shipment</a></li>
+				<li><a href="#Deliverys" data-theme="f" data-transition="none">Deliveries</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div id="Deliverys" data-role="page" data-theme="f"  data-title="Shipment Mobile" >
+	<div data-role="header" data-position="fixed" data-theme="f" >
+		<a href="#Shipment" data-theme="f" data-transition="slide" data-direction="reverse"><b>&lt;</b></a>
+		<h1>Deliveries</h1>
+		<a href="#Delivery" class="ui-btn-right" data-theme="f" data-transition="slide" id="adddelivery">Add</a>
+	</div><!-- /header -->
+	<div data-role="content">	
+		<ul data-role="listview" data-split-icon="delete"  class="list">
+			<li class="listitemtemplate" style="display:none;">
+				<a href="#Delivery" data-transition="slide" class="selectitem">
+				42234433
+				</a>
+				<input type="hidden" class="itemid" />
+				<a href="#" data-theme="f" class="deleteitem">
+				</a>
+			</li>
+		</ul>
+	</div><!-- /content -->
+	<div data-role="footer" data-id="foo1" data-position="fixed" data-theme="f" >
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#Shipment" data-theme="f" data-transition="none">Shipment</a></li>
+				<li><a href="#Deliverys" data-theme="f" data-transition="none" class="ui-btn-active ui-state-persist">Deliveries</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div><!-- /page -->
+<div id="Delivery" data-role="page" data-theme="f" data-title="Shipment Mobile" >
+	<div data-role="header" data-position="fixed" data-theme="f" >
+		<a href="#Deliverys" data-theme="f" data-transition="slide" data-direction="reverse"><b>&lt;</b></a>
+		<h1>Delivery</h1>
+		<a href="#Deliverys" class="ui-btn-right" data-theme="f" id="savedelivery" data-transition="slide" data-direction="reverse">Save</a>
+	</div><!-- /header -->
+	<div data-role="content">	
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+			 		 <label for="DeliveryId">Delivery # (default random): </label>
+					 <input type="text" name="DeliveryId" id="DeliveryId" value="" data-mini="true" />
+				</div>
+			</div>
+			<div class="ui-grid-a">
+				<label for="RetailerId" class="select">To retailer #:</label>
+				<select name="RetailerId" id="RetailerId" data-mini="true"  class="displayTextForList">
+					<option value="">(select)</option>
+					<option value="Costco">Costco</option>
+					<option value="Walmart">Walmart</option>
+					<option value="Fred Meyer">Fred Meyer</option>
+				</select>
+				</div>
+				<div class="ui-block-b">
+			 		 <label for="ItemId">Item (UPC)#: </label>
+					 <input type="text" name="ItemId" id="ItemId" value="" data-mini="true"  class="displayTextForList" />
+				</div>
+			</div>
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					 <label for="DeliveredDate">Date delivered:</label>
+					 <input type="date" name="DeliveredDate" id="DeliveredDate" value="" placeholder="Enter date:" data-mini="true" />
+				</div>
+				<div class="ui-block-b">
+					 <label for="DeliveredTime">Time delivered:</label>
+					 <input type="time" name="DeliveredTime" id="DeliveredTime" value="" placeholder="Enter date" data-mini="true" />
+				</div>
+			</div>
+			<div>
+				<label for="Quantity">Quantity: </label>
+				<input type="number" data-type="range" name="Quantity" id="Quantity" data-theme="f" class="slider" value="1" min="1" max="1000" data-mini="true" data-role="none"/>
+			</div>
+			<div  class="ui-grid-a">
+				<div class="ui-block-a">
+				<label for="QuantityUOM" class="select">Unit of measure:</label>
+				<select name="QuantityUOM" id="QuantityUOM" data-mini="true" >
+					<option value="A">Count</option>
+					<option value="B">Lbs</option>
+				</select>
+				</div>
+			</div>
+	</div>
+</div><!-- /page -->
+<div id="settings" data-role="page" data-theme="f" data-close-btn="none" data-title="Shipment Mobile">
+	<div data-role="header" data-theme="f" data-position="fixed">
+		<a data-theme="f" data-rel="back" data-transition="slideup" data-direction="reverse"><b>X</b></a>
+		<h1>Settings</h1>
+		<a href="#" class="ui-btn-right" data-theme="f" >Save</a>
+	</div><!-- /header -->
+	<div data-role="content">	
+		<h3><label>Shipment Mobile</label></h3>
+		<label>(c) 2013 Compass Point, Inc., www.compass-point.net</label><br><br>
+		<div>
+			<label for="DriverId" class="select">Driver:</label>
+			<select name=""DriverId"" id=""DriverId"" data-mini="true">
+				<option value="1">Bill Jacobsen</option>
+				<option value="2">Phillip O'Leary</option>
+			</select>
+		</div>
+	</div>
+</div><!-- /page -->
+</body>
+</html>
