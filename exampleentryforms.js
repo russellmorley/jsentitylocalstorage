@@ -51,7 +51,7 @@ $(document).ready(function(){
 	  //alert('android v' + androidversion);
 	}
 	
-	mainEntitiesArray = new EntitiesArray('Shipments', 'Shipment');
+	mainEntitiesArray = new CPNS.Entities.EntitiesArray('Shipments', 'Shipment');
 	mainEntitiesArray.fill();
 	mainEntitiesArray.display();
 });
